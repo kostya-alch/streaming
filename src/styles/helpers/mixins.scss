@@ -36,7 +36,6 @@
   translate: -50% -50%;
 }
 
-
 @mixin abs-x() {
   position: absolute;
   left: 50%;
@@ -65,4 +64,15 @@
   clip-path: inset(100%) !important;
   clip: rect(0 0 0 0) !important;
   overflow: hidden !important;
+}
+
+@mixin focus-visible() {
+  outline: dashed var(--color-white);
+  outline-offset: 4px;
+  transition-duration: 0s !important;
+}
+
+@mixin disabled() {
+  opacity: 0.5 !important;
+  cursor: not-allowed;
 }
