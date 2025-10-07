@@ -1,5 +1,4 @@
 import {Head} from "minista"
-import '@/styles/example.scss'
 
 export default function () {
   return (
