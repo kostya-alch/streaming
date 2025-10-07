@@ -1,4 +1,3 @@
-// minista.config.ts
 import {defineConfig} from "minista"
 import path from 'path'
 
@@ -79,7 +78,10 @@ export default defineConfig({
       localsConvention: "camelCaseOnly",
     },
     preprocessorOptions: {
-      scss: {},
+      scss: {
+        additionalData: `@use '@/styles/helpers' as *;`,
+        silenceDeprecations: ['legacy-js-api'],
+      },
       less: {},
       stylus: {},
     },
