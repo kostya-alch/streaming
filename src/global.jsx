@@ -18,7 +18,8 @@ export default function (props) {
         <script src='../src/main.js' type='module'></script>
       </Head>
       <Header />
-      <Content>{children}</Content>
+      <Content>{children}
+      </Content>
       <Footer />
     </>
   )
