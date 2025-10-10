@@ -6,9 +6,9 @@
   border-bottom: var(--border-width-s) solid transparent;
   padding-block: fluid(22, 14);
   animation-name: scrolling-header;
-  animation-fill-mode: both;
-  animation-timeline: scroll();
-  animation-range: 0 100px;
+  animation-fill-mode: both; // чтобы анимация зафиксировалась в конце
+  animation-timeline: scroll(); // api следящее за скроллом
+  animation-range: 0 100px; // чтобы на 100px анимация закончилась
 
   @keyframes scrolling-header {
     to {
